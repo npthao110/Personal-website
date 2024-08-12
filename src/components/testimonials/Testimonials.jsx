@@ -16,9 +16,10 @@ const data = [
     id: 1,
     image: Image1,
     title: "John Doe",
-    subtitle: "Product designer at Dribble",
+    subtitle: "Product designer at DribbleProduct designer at DribbleProduct designer at Dribble",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+    link: "https://www.linkedin.com/in/npthao110/",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const data = [
     subtitle: "Product designer at Dribble",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+    link: "https://www.linkedin.com/in/npthao110/",
   },
   {
     id: 3,
@@ -35,6 +37,7 @@ const data = [
     subtitle: "Product designer at Dribble",
     comment:
       "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
+    link: "https://www.linkedin.com/in/npthao110/",
   },
 ];
 
@@ -53,13 +56,19 @@ const Testimonials = () => {
         grabCursor={true}
         pagination={{ clickable: true }}
       >
-        {data.map(({ id, image, title, subtitle, comment }) => {
+        {data.map(({ id, image, title, subtitle, comment, link }) => {
           return (
             <SwiperSlide className="testimonial__item" key={id}>
               <div className="thumb">
-                <img src={image} alt="" />
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  <img src={image} alt={title} />
+                </a>
               </div>
-              <h3 className="testimonials__title">{title}</h3>
+              <h3 className="testimonials__title">
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                  {title}
+                </a>
+              </h3>
               <span className="subtitle">{subtitle}</span>
               <div className="comment">{comment}</div>
             </SwiperSlide>

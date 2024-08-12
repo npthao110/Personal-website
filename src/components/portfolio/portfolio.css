@@ -95,7 +95,7 @@
   transform: translateY(30px);
   max-height: 80px; /* Giới hạn chiều cao tối đa */
   overflow: auto; /* Thêm thanh cuộn khi nội dung vượt quá chiều cao tối đa */
-  scrollbar-width: thin;  /* Ẩn thanh cuộn cho Firefox */  
+  scrollbar-width: thin;   
   scrollbar-color: #FFD15C rgba(108, 108, 229, 0.2); 
 
 }

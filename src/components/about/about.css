@@ -26,9 +26,17 @@
   top: 20%;
 }
 
+.about__img {
+  justify-self: center; /* Căn giữa theo chiều ngang trong grid */
+}
+
 .about__description {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: justify;
+  max-height: 170px;
+  overflow-y: auto;  /* Cho phép cuộn dọc nếu nội dung vượt quá chiều cao */
+  padding-right: 10px; /* Tạo khoảng cách cho thanh cuộn không chồng lên nội dung */
+  scrollbar-width: none;  /* Ẩn thanh cuộn cho Firefox */   
 }
 
 .skills__titles {
