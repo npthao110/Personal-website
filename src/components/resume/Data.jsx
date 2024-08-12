@@ -25,8 +25,8 @@ const Data = [
     icon: "icon-briefcase",
     year: "Aug 2024",
     title: "Incoming Tutor",
-    institution: "Texas Tech University",
-    institutionUrl: "https://www.ttu.edu/",
+    institution: "Texas Tech University - Learning Center",
+    institutionUrl: "https://www.depts.ttu.edu/soar/LC/",
     desc: "Tutoring courses: Linear Algebra, Computational Thinking with Data Science, Programming Principles, Data Structures, Object-Oriented Programming.",
   },
   {

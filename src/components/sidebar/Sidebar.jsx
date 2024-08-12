@@ -38,13 +38,13 @@ const Sidebar = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#work" className="nav__link">
+              <a href="#projects" className="nav__link">
                 <i className="icon-layers"></i>
               </a>
             </li>
 
             <li className="nav__item">
-              <a href="#blog" className="nav__link">
+              <a href="#testimonials" className="nav__link">
                 <i className="icon-note"></i>
               </a>
             </li>
