@@ -3,13 +3,14 @@ import "./testimonials.css";
 import Image1 from "../../assets/avatar-1.svg";
 import Image3 from "../../assets/avatar-3.svg";
 // import Swiper core and required modules
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation"; // Import thêm kiểu cho navigation
 
 const data = [
   {
@@ -49,12 +50,13 @@ const Testimonials = () => {
       <Swiper
         className="testimonials__container grid"
         // install Swiper modules
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]} 
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
         grabCursor={true}
         pagination={{ clickable: true }}
+        navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }} // Cấu hình navigation
       >
         {data.map(({ id, image, title, subtitle, comment, link }) => {
           return (
@@ -74,6 +76,9 @@ const Testimonials = () => {
             </SwiperSlide>
           );
         })}
+        {/* Thêm các nút bấm */}
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
       </Swiper>
     </section>
   );
