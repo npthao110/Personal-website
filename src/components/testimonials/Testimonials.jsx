@@ -1,46 +1,14 @@
 import React from "react";
 import "./testimonials.css";
-import Image1 from "../../assets/avatar-1.svg";
-import Image3 from "../../assets/avatar-3.svg";
+import data from "./Data";
 // import Swiper core and required modules
 import { Pagination, Navigation } from "swiper";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation"; // Import thêm kiểu cho navigation
-
-const data = [
-  {
-    id: 1,
-    image: Image1,
-    title: "John Doe",
-    subtitle: "Product designer at DribbleProduct designer at DribbleProduct designer at Dribble",
-    comment:
-      "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
-    link: "https://www.linkedin.com/in/npthao110/",
-  },
-  {
-    id: 2,
-    image: Image3,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
-    comment:
-      "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
-    link: "https://www.linkedin.com/in/npthao110/",
-  },
-  {
-    id: 3,
-    image: Image3,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
-    comment:
-      "I enjoy working with the theme and learn so much. You       guys make the process fun and interesting. Good luck! 👍",
-    link: "https://www.linkedin.com/in/npthao110/",
-  },
-];
+import "swiper/css/navigation";
 
 const Testimonials = () => {
   return (
@@ -56,7 +24,7 @@ const Testimonials = () => {
         loop={true}
         grabCursor={true}
         pagination={{ clickable: true }}
-        navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }} // Cấu hình navigation
+        navigation={{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }} 
       >
         {data.map(({ id, image, title, subtitle, comment, link }) => {
           return (
@@ -72,11 +40,15 @@ const Testimonials = () => {
                 </a>
               </h3>
               <span className="subtitle">{subtitle}</span>
-              <div className="comment">{comment}</div>
+              <div className="comment">
+                <div className="comment__content">
+                  {comment}
+                </div>
+              </div>
             </SwiperSlide>
           );
         })}
-        {/* Thêm các nút bấm */}
+        
         <div className="swiper-button-prev"></div>
         <div className="swiper-button-next"></div>
       </Swiper>

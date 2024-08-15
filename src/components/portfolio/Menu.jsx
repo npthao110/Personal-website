@@ -1,8 +1,8 @@
 import Work1 from "../../assets/Project1.jpg";
 import Work2 from "../../assets/Project2.png";
-import Work3 from "../../assets/work-3.svg";
+import Work3 from "../../assets/Project3.png";
 import Work4 from "../../assets/Project4.png";
-import Work5 from "../../assets/Project3.png";
+import Work5 from "../../assets/Project5.png";
 import Work6 from "../../assets/Project6.png";
 
 const Menu = [

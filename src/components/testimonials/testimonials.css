@@ -1,11 +1,12 @@
 .testimonials__container {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
 .testimonial__item {
   text-align: center;
   padding: 0 1.25rem 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .thumb {
@@ -25,12 +26,19 @@
 
 .comment {
   background-color: var(--container-color);
-  padding: 1.875rem;
+  padding: 1.85rem;
   margin-top: 1.5rem;
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
   position: relative;
   margin-bottom: 3rem;
+}
+
+.comment__content {
+  text-align: justify;
+  max-height: 150px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .comment::before {
