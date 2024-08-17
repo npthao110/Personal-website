@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Personal-website/static/css/main.4504207f.css",
+    "main.js": "/Personal-website/static/js/main.f6ae58af.js",
+    "static/media/Project3.png": "/Personal-website/static/media/Project3.159ee2e2554333f7a88a.png",
+    "static/media/Project6.png": "/Personal-website/static/media/Project6.a1ad83d713388668ab16.png",
+    "static/media/Project2.png": "/Personal-website/static/media/Project2.3f37089fb4c6acd0a097.png",
+    "static/media/Luisa.png": "/Personal-website/static/media/Luisa.78c62b2a21e71a9a52be.png",
+    "static/media/Project1.jpg": "/Personal-website/static/media/Project1.1e1d9ca57b26e604b611.jpg",
+    "static/media/Project4.png": "/Personal-website/static/media/Project4.ea507a4b735e84bd245e.png",
+    "static/media/Project5.png": "/Personal-website/static/media/Project5.e3d22095dabe04db0eeb.png",
+    "static/media/thao-profile1.png": "/Personal-website/static/media/thao-profile1.9aa9f52a6e711667b5d3.png",
+    "static/media/Quinxie.jpg": "/Personal-website/static/media/Quinxie.b0945415687aef794638.jpg",
+    "static/media/cat-profile3.png": "/Personal-website/static/media/cat-profile3.e3ea04a4f07aa17d4930.png",
+    "static/media/dots-bg.svg": "/Personal-website/static/media/dots-bg.aa8289c51cd678b8cd47.svg",
+    "index.html": "/Personal-website/index.html",
+    "main.4504207f.css.map": "/Personal-website/static/css/main.4504207f.css.map",
+    "main.f6ae58af.js.map": "/Personal-website/static/js/main.f6ae58af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4504207f.css",
+    "static/js/main.f6ae58af.js"
+  ]
+}
