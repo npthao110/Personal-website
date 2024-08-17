@@ -42,7 +42,7 @@ const Testimonials = () => {
               <span className="subtitle">{subtitle}</span>
               <div className="comment">
                 <div className="comment__content">
-                  {comment}
+                  &ldquo;{comment}&rdquo;
                 </div>
               </div>
             </SwiperSlide>

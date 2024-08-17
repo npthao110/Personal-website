@@ -15,12 +15,19 @@
   margin: 0 auto;
 }
 
+.thumb img {
+  border-radius: 50%; 
+}
+
 .testimonials__title {
   margin-top: 0.75rem;
 }
+.testimonials__title a {
+  color: var(--small-text-color);
+}
 
 .subtitle {
-  color: #8b88b1;
+  color: var(--subtitle-color);
   font-size: var(--small-font-size);
 }
 

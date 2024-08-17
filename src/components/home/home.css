@@ -46,6 +46,10 @@
   width: 100%;
 }
 
+.scroll__down a {
+  color: var(--small-text-color);
+}
+
 .home__scroll-name {
   font-size: var(--small-font-size);
 }
