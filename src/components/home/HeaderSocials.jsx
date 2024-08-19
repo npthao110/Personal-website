@@ -7,32 +7,36 @@ const HeaderSocials = () => {
         href="https://www.instagram.com/npthao110_/"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer noopener"
       >
-        <i class="fa-brands fa-instagram"></i>
+        <i className="fa-brands fa-instagram"></i>
       </a>
       
       <a
         href="https://www.linkedin.com/in/npthao110/"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer noopener"
       >
-        <i class="fa-brands fa-linkedin"></i>
+        <i className="fa-brands fa-linkedin"></i>
       </a>
 
       <a
         href="https://github.com/npthao110"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer noopener"
       >
-        <i class="fa-brands fa-github"></i>
+        <i className="fa-brands fa-github"></i>
       </a>
 
       <a
         href="mailto:n.p.thao.110@gmail.com"
         className="home__social-link"
         target="_blank"
+        rel="noreferrer noopener"
       >
-        <i class="fa-regular fa-envelope"></i>
+        <i className="fa-regular fa-envelope"></i>
       </a>
 
     </div>
