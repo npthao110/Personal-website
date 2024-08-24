@@ -4,12 +4,17 @@
 
 .contact__container {
   grid-template-columns: 4fr 8fr;
-  column-gap: 1.875rem;
+  column-gap: 3rem;
 }
 
 .contact__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.5rem;
+}
+
+.contact__form .btn {
+  display: block;
+  margin: 0 auto;
 }
 
 .contact__form-group {

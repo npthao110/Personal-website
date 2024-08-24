@@ -1,21 +1,34 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./contact.css";
+import Swal from 'sweetalert2'
 
 const Contact = () => {
-  const form = useRef();
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    
+    formData.append("access_key", "53b92259-bca5-4b37-b304-223b1ebf4e84");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
 
-    window.Email.send({
-      SecureToken: "YOUR_SECURE_TOKEN",  
-      To: "n.p.thao.110@gmail.com",  
-      From: e.target.user_email.value,  
-      Subject: e.target.subject.value,  
-      Body: `Name: ${e.target.user_name.value}<br/> Email: ${e.target.user_email.value}<br/> Message: ${e.target.message.value}`
-    })
-      .then((message) => alert("Message sent successfully!"))
-      .catch((error) => alert("Failed to send the message, please try again."));
+    const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+        },
+        body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      Swal.fire({
+        title: "Success!",
+        text: "Message sent successfully! 🙌",
+        icon: "success"
+      });
+      event.target.reset();
+    }
   };
 
   return (
@@ -24,13 +37,13 @@ const Contact = () => {
 
       <div className="contact__container grid">
         <div className="contact__info">
-          <h3 className="contact__title">Let's talk about everything!</h3>
+          <h3 className="contact__title">Let's talk about everything! </h3>
           <p className="contact__details">
-            Don't like forms? Send me an email. 👋
+          I love connecting and learning from others. If you have any questions, suggestions, or are interested in helping with my research project or practicing LeetCode problems, feel free to reach out to me! :)) 📬
           </p>
         </div>
 
-        <form ref={form} onSubmit={sendEmail} className="contact__form">
+        <form onSubmit={onSubmit} className="contact__form">
           <div className="contact__form-group">
             <div className="contact__form-div">
               <input
