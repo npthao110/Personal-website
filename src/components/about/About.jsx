@@ -22,7 +22,7 @@ const About = () => {
               I'm dedicated to leveraging technology to solve real-world problems. 
               I'm excited to share my journey, projects, and aspirations with you.
             </p>
-            <a href="https://drive.google.com/file/d/1RRhbGSQszADrv_X2hv4frVKbEzXqcEMO/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn">
+            <a href="https://drive.google.com/file/d/166TJb1RQI169Huy91_uNM2bvWT8JML4A/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn">
               My Resume
             </a>
           </div>

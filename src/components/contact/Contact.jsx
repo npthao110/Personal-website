@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="contact__info">
           <h3 className="contact__title">Let's talk about everything! </h3>
           <p className="contact__details">
-          I love connecting and learning from others. If you have any questions, suggestions, or are interested in helping with my research project or practicing LeetCode problems, feel free to reach out to me! :)) 📬
+          I love connecting and learning from others. If you have any questions, suggestions, or are interested in helping with my research project or practicing LeetCode problems, feel free to reach out to me! :D 📬
           </p>
         </div>
 
